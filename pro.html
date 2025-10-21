@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <title>معرفی بازی‌ها</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Vazirmatn', sans-serif;
+    }
+
+    body {
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #2d004d, #000000);
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #fff;
+    }
+
+    .more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 14px;
+      font-size: 13px;
+      border: 1px solid #7a00ff;
+      border-radius: 8px;
+      background-color: #1a1a1a;
+      color: #b86bff;
+      text-decoration: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .more-btn:hover {
+      background-color: #7a00ff;
+      color: #fff;
+      box-shadow: 0 0 10px #9b4dff;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .game-card {
+      background-color: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #5e00c6;
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #7a00ff;
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+
+    }
+
+    .game-info {
+      padding: 15px;
+    }
+
+    .game-info h2 {
+      color: #b86bff;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .game-info p {
+      font-size: 14px;
+      color: #ccc;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #15002b;
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .neon-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border: 2px solid #7a00ff;
+      border-radius: 12px;
+      background-color: #1a1a1a;
+      color: #b86bff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+      box-shadow: 0 0 10px #5e00c6;
+    }
+
+    .neon-button::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      border-radius: 15px;
+      border: 2px solid #b86bff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .neon-button:hover {
+      background-color: #7a00ff;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #9b4dff, 0 0 40px #7a00ff;
+    }
+
+    .neon-button:hover::after {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🎮 معرفی برترین بازی‌ها 🎮</h1>
+  </header>
+
+  <section class="games">
+    <div class="game-card">
+      <img src="images/gta.jpg" alt="GTA VI">
+      <div class="game-info">
+        <h2>GTA VI</h2>
+        <p dir="rtl">یک بازی جهان‌باز با داستانی جذاب و گرافیکی فوق‌العاده که در شهر Los Santos جریان دارد.</p>
+        <a class="more-btn" href="Gtavi.html">اطلاعات بیشتر</a>
+      </div>
+    </div>
+    </div>
+
+    <div class="game-card">
+      <img src="images/godofwar.jpg" alt="God of War">
+      <div class="game-info">
+        <h2>God of War</h2>
+        <p dir="rtl">کریتوس و پسرش در سفری اسطوره‌ای میان دنیای خدایان نورس؛ اکشن، احساس و داستان عمیق.</p>
+        <a class="more-btn" href="gow.html">اطلاعات بیشتر</a>
+
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="images/fifa25.jpg" alt="FC 25">
+      <div class="game-info">
+        <h2>FC 25</h2>
+        <p dir="rtl">جدیدترین نسخه از بازی فوتبال محبوب با گیم‌پلی بهبود یافته و گرافیکی واقعی‌تر از همیشه.</p>
+        <a class="more-btn" href="fc25.html">اطلاعات بیشتر</a>
+
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="images/the lastofus.jpg" alt="The Last Of Us II">
+      <div class="game-info">
+        <h2>The Last Of Us II</h2>
+        <p dir="rtl">داستان بازی The Last of Us در سال ۲۰۳۳ و بیست سال بعد از یک شیوع قارچی که نزدیک به ۶۰ درصد جمعیت
+          دنیا را
+          آلوده کرد، جریان دارد.</p>
+        <a class="more-btn" href="last2.htm">اطلاعات بیشتر</a>
+
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="images/1.jpg" alt="Ghost Of Tsushima">
+      <div class="game-info">
+        <h2>Ghost Of Tsushima</h2>
+        <p dir="rtl">داستان بازی Ghost of Tsushima در سال 1274 جریان دارد که مغول‌ها به رهبری کوتان خان، نوه چنگیز خان،به
+          سوشیمای
+          ژاپن حمله کرده‌اند</p>
+        <a class="more-btn" href="ghostof.html">اطلاعات بیشتر</a>
+
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="images/resident-evil-village.jpg" alt="Resident Evil Village">
+      <div class="game-info">
+        <h2>Resident Evil Village</h2>
+        <p dir="rtl">در فوریه 2021 ایتان وینترز و همسشر میا، توسط کریس ردفیلد به منطقه‌ای در شرق اروپا منتقل شده و زندگی
+          خود را
+          ادامه می‌دهند.</p>
+        <a class="more-btn" href="revill.html">اطلاعات بیشتر</a>
+
+      </div>
+    </div>
+
+
+    <div class="game-card">
+      <img src="images/images.jpg" alt="Assassin's Creed Shadows">
+      <div class="game-info">
+        <h2>Assassin's Creed Shadows</h2>
+        <p dir="rtl">داستان بازی Assassin's Creed Shadows در ژاپن فئودال قرار دارد ، به طور خاص از سال 1579 در دوره
+          آزوچی مومویاما
+          شروع می شود</p>
+        <a class="more-btn" href="assassins.html">اطلاعات بیشتر</a>
+
+      </div>
+    </div>
+
+    <div class="game-card">
+      <img src="images/cyber.jpg" alt="Cyberpunk 2077">
+      <div class="game-info">
+        <h2>Cyberpunk 2077</h2>
+        <p dir="rtl">داستان بازی Cyberpunk 2077 در آینده و در شهری پر از جنایت به نام نایت سیتی جریان دارد که شرکت‌های
+          بزرگ فراتر
+          از قانون آن را کنترل می‌کنند.</p>
+        <a class="more-btn" href="cyber.html">اطلاعات بیشتر</a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>2025 معرفی برترین بازی‌ها - طراحی شده توسط ابوالفضل حیدری</p>
+    <p>
+      <a href="about.html" class="neon-button">درباره ما</a>
+      <a href="login.html" class="neon-button">ورود</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
